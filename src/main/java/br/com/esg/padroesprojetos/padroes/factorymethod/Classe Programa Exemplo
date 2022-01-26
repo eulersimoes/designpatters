@@ -1,0 +1,11 @@
+    static void Main(string[] args)
+        {
+            FabricaVeiculo factory = new FabricaDeVeiculoConcreta();
+
+            IFabrica moto = factory.GetVehicle("Moto");
+            moto.Drive(10);
+
+            IFabrica carro = factory.GetVehicle("Carro");
+            carro.Drive(10);
+
+        }
